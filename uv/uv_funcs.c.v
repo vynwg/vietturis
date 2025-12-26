@@ -3,7 +3,7 @@ module uv
 fn C.uv_default_loop() &Loop
 fn C.uv_tcp_init(&Loop, &TCP) i32
 fn C.uv_ip4_addr(&char, i32, &SockaddrIn) i32
-fn C.uv_run(&Loop, u8) i32
+fn C.uv_run(&Loop, RunMode) i32
 fn C.uv_tcp_bind(&TCP, &Sockaddr, u32) i32
 fn C.uv_listen(&Stream, i32, NewConnCb) i32
 fn C.uv_accept(&Stream, &Stream) i32

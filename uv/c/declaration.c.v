@@ -1,6 +1,5 @@
 module c
 
-#flag linux -L /usr/lib/
-#flag linux -luv
+#flag -luv
 
 #include <uv.h>

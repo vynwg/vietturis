@@ -20,6 +20,12 @@ struct C.sockaddr_in {}
 struct C.sockaddr {}
 
 
+pub enum RunMode as u8 {
+	default = C.UV_RUN_DEFAULT
+  	once    = C.UV_RUN_ONCE
+  	nowait  = C.UV_RUN_NOWAIT
+}
+
 pub type Loop       = C.uv_loop_t
 pub type TCP        = C.uv_tcp_t
 pub type Stream     = C.uv_stream_t
